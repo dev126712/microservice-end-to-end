@@ -2,13 +2,14 @@
 
 A production-grade Kubernetes platform built on **Google GKE**, using a fully declarative GitOps workflow. Every resource — from cloud infrastructure to application deployments — is version-controlled, automated, and repeatable.
 
+## 🔁 GitOps Flow
 
 This project uses a tree-repo GitOps pattern:
 * [**Manifest Repo (Helm values) & ArgoCD Application file**](https://github.com/dev126712/microservice-charts-deployment)
 
 * [**☁️ Infrastructure (Terraform)**](https://github.com/dev126712/micro-service-infra-management)
   
-* [**Application code CI/CD Pipelines (GitHub Actions)**](https://github.com/dev126712/microservices-app)
+* [**Application code CI/CD Pipelines (App Repo)**](https://github.com/dev126712/microservices-app)
 ---
 
 ## 📐 Architecture Overview
@@ -60,31 +61,7 @@ All cloud resources are provisioned with Terraform:
 
 ---
 
-## 🔁 GitOps Flow
 
-This project uses a tree-repo GitOps pattern:
-[**Manifest Repo (Helm values)**](https://github.com/dev126712/microservice-charts-deployment)
-[**☁️ Infrastructure (Terraform)**](https://github.com/dev126712/micro-service-infra-management)
-[**CI/CD Pipelines (GitHub Actions)**](https://github.com/dev126712/microservices-app)
-
-```
-App Repo (source code)          Manifest Repo (Helm values)
-        │                                │
-        │  push to main                  │
-        ▼                                │
-  GitHub Actions CI                      │
-   ├─ SCA Scan (Trivy)                   │
-   ├─ SAST Scan (Semgrep)                │
-   ├─ Docker Build & Push                │
-   ├─ Image Scan (Trivy)                 │
-   └─ yq patches image.tag ────────────►│
-                                         │
-                                    ArgoCD detects diff
-                                         │
-                                         ▼
-                                    kubectl apply
-                                    (automated sync)
-```
 
 > No `kubectl apply` is ever run manually. A `git push` is the only deployment trigger.
 
