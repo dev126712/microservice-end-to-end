@@ -1,19 +1,6 @@
 ### End-to-end Microservice Project from security scanning through CI/CD(GitHub Action) to monitoring on Grafana.
 
-[**Application Code Repository**](https://github.com/dev126712/microservices-app) : All 5 microservice CI Workflows has SCA SAST scan
-5 microservice plus Redis(caching) and Postgress Database.
-#### Project Overview:
-- Frontend HTML/Nginx
-- Order Service ( Python/Flask )
-- Product Service ( Node.js/Express )
-- Notification Service ( Golang )
-- Storage ( Postgress )
-- Caching ( Redis )
-- CI Pipeline
-- SCA Scanning ( Trivy )
-- SAST ( Semgrep )
-- Docker
-- Docker Compose
+[**Application Code Repository**](https://github.com/dev126712/microservices-app) contains all 5 microservice's CI Workflows. EACH of them has SCA & SAST CI workflows. Every push commit is then scan and build. All new images built is then, with the help of the sed command, change to the respective microservice [**helm chart deployment**](https://github.com/dev126712/microservice-charts-deployment) to include the new freshly and secure image.
 
 ### Micorservice Application Deployment CD
 - Infra-management Deployment: https://github.com/dev126712/micro-service-infra-management
