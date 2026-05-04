@@ -1,4 +1,7 @@
-### Microservices Application CI https://github.com/dev126712/microservices-app
+### End-to-end Microservice Project from security scanning through CI/CD(GitHub Action) to monitoring on Grafana.
+
+https://github.com/dev126712/microservices-app
+5 microservice plus Redis(caching) and Postgress Database.
 #### Project Overview:
 - Frontend HTML/Nginx
 - Order Service ( Python/Flask )
