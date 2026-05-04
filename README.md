@@ -20,22 +20,6 @@ A production-grade Kubernetes platform built on **Google GKE**, using a fully de
 
 ---
 
-## 🗂️ Repository Structure
-
-```
-.
-├── terraform/               # GKE cluster, VPC, NAT, Gateway API, Helm releases
-├── argocd-apps/             # ArgoCD Application manifests (one per service)
-├── charts/
-│   ├── frontend/            # Helm chart — Nginx reverse proxy
-│   ├── order/               # Helm chart — Order service
-│   ├── product/             # Helm chart — Product service
-│   ├── notification/        # Helm chart — Notification service
-│   ├── postgres/            # StatefulSet + Headless Service + PVC
-│   └── redis/               # StatefulSet + Headless Service + PVC (AOF)
-└── .github/workflows/       # GitHub Actions CI pipelines (one per service)
-```
-
 ---
 
 ## 🛠️ Stack
