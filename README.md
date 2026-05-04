@@ -14,17 +14,7 @@ This project uses a tree-repo GitOps pattern:
 
 ## 📐 Architecture Overview
 
-```
-                        ┌─────────────────────────────────────────────────┐
-                        │                  GKE Cluster                    │
-                        │                                                 │
-  User ──► GKE Gateway  │  frontend-ns ──► order-ns ──► notification-ns  │
-           (HTTPRoute)  │       │               │                         │
-                        │       └──────────► product-ns ──► redis-ns      │
-                        │                       │                         │
-                        │                  postgres-ns                    │
-                        └─────────────────────────────────────────────────┘
-```
+![](https://github.com/dev126712/microservice-end-to-end/blob/9e866204ebdcf85dc37dcc8122f2d5ab583a455f/Untitled%20Diagram.drawio%20(5).png)
 
 ---
 
