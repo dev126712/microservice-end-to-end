@@ -6,14 +6,4 @@ All new images built is then, with the help of the sed command, change to the re
 
 The [**Infrastructure**](https://github.com/dev126712/micro-service-infra-management) is provisionned with terraform
 
-### Micorservice Application Deployment CD
-- Infra-management Deployment: https://github.com/dev126712/micro-service-infra-management
-  - Google Cloud Platform
-  - GKE cluster
-  - Kubernetes
-  - Terraform
-  - Security pipeline
-  - Trivy ( Cluster DAST )
-  - HashircorpVault ( Secrets )
-  - VictoriaMetrics ( Monitoring )
   
