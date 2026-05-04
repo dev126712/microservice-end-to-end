@@ -1,6 +1,6 @@
 ### End-to-end Microservice Project from security scanning through CI/CD(GitHub Action) to monitoring on Grafana.
 
-[**Code App**](https://github.com/dev126712/microservices-app)
+[** Application Code Repository**](https://github.com/dev126712/microservices-app): All 5 microservice CI Workflows has SCA SAST scan
 5 microservice plus Redis(caching) and Postgress Database.
 #### Project Overview:
 - Frontend HTML/Nginx
