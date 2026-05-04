@@ -2,6 +2,13 @@
 
 A production-grade Kubernetes platform built on **Google GKE**, using a fully declarative GitOps workflow. Every resource — from cloud infrastructure to application deployments — is version-controlled, automated, and repeatable.
 
+
+This project uses a tree-repo GitOps pattern:
+* [**Manifest Repo (Helm values)**](https://github.com/dev126712/microservice-charts-deployment)
+
+* [**☁️ Infrastructure (Terraform)**](https://github.com/dev126712/micro-service-infra-management)
+  
+* [**CI/CD Pipelines (GitHub Actions)**](https://github.com/dev126712/microservices-app)
 ---
 
 ## 📐 Architecture Overview
