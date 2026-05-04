@@ -40,7 +40,7 @@ A production-grade Kubernetes platform built on **Google GKE**, using a fully de
 
 ---
 
-## ☁️ Infrastructure (Terraform)
+## [**☁️ Infrastructure (Terraform)**](https://github.com/dev126712/micro-service-infra-management)
 
 All cloud resources are provisioned with Terraform:
 
@@ -58,7 +58,7 @@ All cloud resources are provisioned with Terraform:
 This project uses a **two-repo GitOps pattern**:
 
 ```
-App Repo (source code)          Manifest Repo (Helm values)
+App Repo (source code)          [**Manifest Repo (Helm values)**](https://github.com/dev126712/microservice-charts-deployment)
         │                                │
         │  push to main                  │
         ▼                                │
@@ -80,7 +80,7 @@ App Repo (source code)          Manifest Repo (Helm values)
 
 ---
 
-## ⚙️ CI/CD Pipelines (GitHub Actions)
+## ⚙️ [**CI/CD Pipelines (GitHub Actions)**](https://github.com/dev126712/microservices-app)
 
 Each microservice has an **independent, path-triggered workflow**. A change to `product-service/` only builds the product service.
 
