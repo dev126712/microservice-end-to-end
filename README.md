@@ -4,11 +4,11 @@ A production-grade Kubernetes platform built on **Google GKE**, using a fully de
 
 
 This project uses a tree-repo GitOps pattern:
-* [**Manifest Repo (Helm values)**](https://github.com/dev126712/microservice-charts-deployment)
+* [**Manifest Repo (Helm values) & ArgoCD Application file**](https://github.com/dev126712/microservice-charts-deployment)
 
 * [**☁️ Infrastructure (Terraform)**](https://github.com/dev126712/micro-service-infra-management)
   
-* [**CI/CD Pipelines (GitHub Actions)**](https://github.com/dev126712/microservices-app)
+* [**Application code CI/CD Pipelines (GitHub Actions)**](https://github.com/dev126712/microservices-app)
 ---
 
 ## 📐 Architecture Overview
