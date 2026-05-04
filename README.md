@@ -4,7 +4,7 @@
 
 All new images built is then, with the help of the sed command, change to the respective microservice [**helm chart deployment**](https://github.com/dev126712/microservice-charts-deployment) to include the new freshly and secure image.
 
-[**GKE cluster Infrastructure**](https://github.com/dev126712/micro-service-infra-management) contain the Terraform code that built the network
+The [**Infrastructure**](https://github.com/dev126712/micro-service-infra-management) is provisionned with terraform
 
 ### Micorservice Application Deployment CD
 - Infra-management Deployment: https://github.com/dev126712/micro-service-infra-management
