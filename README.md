@@ -55,10 +55,13 @@ All cloud resources are provisioned with Terraform:
 
 ## 🔁 GitOps Flow
 
-This project uses a **two-repo GitOps pattern**:
+This project uses a tree-repo GitOps pattern:
+[**Manifest Repo (Helm values)**](https://github.com/dev126712/microservice-charts-deployment)
+[**☁️ Infrastructure (Terraform)**](https://github.com/dev126712/micro-service-infra-management)
+[**CI/CD Pipelines (GitHub Actions)**](https://github.com/dev126712/microservices-app)
 
 ```
-App Repo (source code)          [**Manifest Repo (Helm values)**](https://github.com/dev126712/microservice-charts-deployment)
+App Repo (source code)          Manifest Repo (Helm values)
         │                                │
         │  push to main                  │
         ▼                                │
