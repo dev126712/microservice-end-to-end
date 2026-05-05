@@ -14,7 +14,7 @@ This project uses a tree-repo GitOps pattern:
 
 ## 📐 Architecture Overview
 
-![](https://github.com/dev126712/microservice-end-to-end/blob/9e866204ebdcf85dc37dcc8122f2d5ab583a455f/Untitled%20Diagram.drawio%20(5).png)
+![k8s-micro](https://github.com/dev126712/microservice-end-to-end/blob/4f373bcf9f144a78f5d4e350b2c60fd443122b4e/k8s-micro.drawio.png)
 
 ---
 
